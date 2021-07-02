@@ -197,5 +197,13 @@
 				<p>&copy;2021 <a href="#" class="find">FindLaw</a>.<span>all rights reserved.</span><a href="#">disclaimer</a><a href="#">site map</a><a href="#">privacy policy</a></p>
 			</div>
 		</div>	
+		<script>
+		// We listen to the resize event
+			window.addEventListener('resize', () => {
+			// We execute the same script as before
+			let vh = window.innerHeight * 0.01;
+			document.documentElement.style.setProperty('--vh', `${vh}px`);
+			});
+		</script>
 	</body>
 </html>

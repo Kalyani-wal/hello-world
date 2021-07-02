@@ -412,8 +412,10 @@ body * {
 		margin-bottom: 10px;
 	}
 	.wrapper-banner {
-		background: rgb(241, 241, 241);
+		background: red;
 		padding: 20px 0;
+		height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  		height: calc(var(--vh, 1vh) * 100);
 	}
 	.wrapper-banner p {
 		font-size: 20px;
@@ -471,16 +473,3 @@ body * {
 		margin: 0 0 20px;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
